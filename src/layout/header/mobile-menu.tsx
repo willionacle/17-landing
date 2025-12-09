@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import type { MenuItemsProps } from ".";
@@ -29,7 +28,7 @@ export default function MobileMenu({ items }: { items: MenuItemsProps[] }) {
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger asChild>
           <Button variant="ghost" size="icon" className="rounded-sm">
-            {open ? <X className="h-9 w-9" /> : <IconMenu className="w-80" />}
+            <IconMenu className="min-w-96 min-h-7 text-9xl" />
           </Button>
         </SheetTrigger>
 

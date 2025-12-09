@@ -39,13 +39,13 @@ export default function Bottom() {
         communication, we ensure every solution aligns with each client’s goals
         and vision.
       </p>
-      <div className="flex flex-wrap lg:justify-center gap-3 lg:gap-5">
+      <div className="flex flex-wrap justify-center gap-3 lg:gap-5">
         {services.map((item, idx) => (
           <Card
             key={idx}
             className={clsx(
               "p-7 bg-linear-to-r from-neutral-900 to-neutral-950",
-              idx == 1 && "relative bottom-8"
+              idx == 1 && "relative lg:bottom-8"
             )}
           >
             <CardHeader className="p-0">

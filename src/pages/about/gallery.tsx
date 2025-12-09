@@ -30,7 +30,7 @@ export default function Gallery() {
 
   return (
     <div className="pt-18 lg:text-center">
-      <h1 className="font-[Playfair_Display] text-4xl lg:text-6xl italic font-extrabold mb-3">
+      <h1 className="font-[Playfair_Display] text-4xl text-center lg:text-6xl italic font-extrabold mb-3">
         IntelliSeven in Action
       </h1>
 
@@ -59,7 +59,7 @@ export default function Gallery() {
                 <Card
                   className={clsx(
                     "p-0 overflow-hidden rounded-lg transition-all duration-300",
-                    !isActive && "lg:blur-md lg:opacity-30 scale-80",
+                    !isActive && "lg:blur-md lg:opacity-30 lg:scale-80",
                     isActive && "opacity-100 scale-100"
                   )}
                 >
@@ -76,8 +76,8 @@ export default function Gallery() {
             );
           })}
         </CarouselContent>
-        <CarouselPrevious className="-left-10 cursor-pointer text-black hover:text-black bg-white! md:left-56 lg:backdrop-blur-none" />
-        <CarouselNext className="-right-10 cursor-pointer text-black hover:text-black bg-white! md:right-56 lg:backdrop-blur-none" />
+        <CarouselPrevious className="-left-2 cursor-pointer text-black hover:text-black bg-white! md:left-56 lg:backdrop-blur-none" />
+        <CarouselNext className="-right-2 cursor-pointer text-black hover:text-black bg-white! md:right-56 lg:backdrop-blur-none" />
       </Carousel>
     </div>
   );
