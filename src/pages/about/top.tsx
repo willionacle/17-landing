@@ -1,6 +1,6 @@
 export default function Top() {
   return (
-    <div className="flex flex-col lg:flex-row gap-6 lg:gap-0 lg:justify-between">
+    <div className="flex flex-col lg:flex-row gap-6 lg:gap-5 lg:justify-between">
       <div className="flex flex-col lg:items-start gap-3 lg:gap-5 lg:w-1/2">
         <div className="border flex items-center gap-2 w-fit mx-auto lg:mx-0 rounded-full text-yellow-300 py-2 px-5">
           <img src="/img/about/abouticon.png" className="w-7" /> About
