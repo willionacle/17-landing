@@ -3,6 +3,7 @@ import { useScrollTrigger } from "@/hooks/useScrollPosition";
 import MobileMenu from "@/layout/header/mobile-menu";
 import clsx from "clsx";
 import DesktopNav from "./desktop-nav";
+import { useNavigate } from "react-router";
 
 export interface MenuItemsProps {
   label: string;
@@ -10,6 +11,7 @@ export interface MenuItemsProps {
 }
 
 export default function Header() {
+  const navigate = useNavigate();
   const scrolled = useScrollTrigger(20);
   const menuItems: MenuItemsProps[] = [
     { label: "Home", href: "/#home" },
@@ -27,7 +29,11 @@ export default function Header() {
       )}
     >
       <div className="max-w-11/12 lg:max-w-8xl mx-auto flex items-center justify-between">
-        <img src={Logo} className="w-40 lg:w-56" />
+        <img
+          src={Logo}
+          onClick={() => navigate("/")}
+          className="w-40 lg:w-56 cursor-pointer"
+        />
         <MobileMenu items={menuItems} />
         <DesktopNav items={menuItems} />
       </div>
