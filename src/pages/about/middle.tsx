@@ -4,7 +4,7 @@ export default function Middle() {
   return (
     <div className="my-18">
       <Title title="Message from the CEO" />
-      <div className="flex flex-col lg:flex-row lg:justify-center lg:mx-auto items-center lg:max-w-10/12 lg:mt-20">
+      <div className="flex flex-col gap-2 lg:flex-row lg:justify-center lg:mx-auto items-center lg:max-w-10/12 lg:mt-20">
         <div className="my-6 lg:my-0 lg:w-1/2">
           <img src="/img/about/gally.png" />
         </div>
