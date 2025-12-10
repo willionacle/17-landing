@@ -45,8 +45,8 @@ export default function Cards() {
               className="bg-top bg-cover w-full h-[200px] lg:h-[400px] grayscale group-hover:grayscale-0 transition-all duration-600 scale-100 group-hover:scale-125"
             />
           </CardContent>
-          <CardFooter className="p-4 flex flex-col items-start gap-2 relative z-10 bg-neutral-900">
-            <div className="flex items-center gap-2">
+          <CardFooter className="p-7 flex flex-col items-start gap-2 relative z-10 bg-neutral-900">
+            <div className="flex items-center gap-2 lg:mb-3">
               <h5 className="text-yellow-300 text-lg">{item.title}</h5>
               {item.link && <IconExternalLink className="text-red-500 w-5" />}
             </div>

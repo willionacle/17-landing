@@ -10,7 +10,7 @@ export default function Hero() {
     >
       <div className="max-w-11/12 lg:max-w-8xl flex flex-col gap-5 items-center lg:justify-between text-center">
         <img src={Logo} className="w-32 lg:w-56 lg:mb-8" />
-        <span className="lg:text-4xl">Empowering you with</span>
+        <span className="lg:text-4xl italic">Empowering you with</span>
         <CarouselText />
         <div className="flex justify-center items-center w-full py-10 bg-[url('/bg-red-gradient.jpg')] bg-cover bg-center lg:mb-10">
           <Button

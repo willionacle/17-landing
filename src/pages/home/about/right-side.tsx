@@ -26,7 +26,7 @@ export default function RightSide() {
 
   return (
     <div className="lg:text-left lg:w-[60%] lg:h-full">
-      <h1 className="text-xl lg:text-4xl font-extrabold mb-4">
+      <h1 className="text-xl lg:text-4xl font-extrabold mb-7">
         At IntelliSeven, your goals guide every step we take.
       </h1>
       <p className="mb-5 text-justify font-extralight">

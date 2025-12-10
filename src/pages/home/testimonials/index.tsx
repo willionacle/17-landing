@@ -5,7 +5,7 @@ export default function Testimonials() {
     <section className="w-full py-18">
       <div className="max-w-11/12 lg:max-w-8xl mx-auto">
         <div className="text-center mb-18">
-          <h1 className="text-red-500 text-xl lg:text-4xl font-bold">
+          <h1 className="text-red-500 text-xl lg:text-4xl lg:mb-7 font-bold">
             Client Spotlight
           </h1>
           <span>

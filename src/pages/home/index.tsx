@@ -8,6 +8,7 @@ import Testimonials from "./testimonials";
 import Contact from "./contact";
 import BackToTop from "@/components/back-to-top";
 import { useEffect } from "react";
+import BlurFade from "@/components/blur-fade";
 
 export const divider = (
   <Separator className="max-w-11/12 mx-auto lg:max-w-8xl" />
@@ -27,18 +28,32 @@ export default function Home() {
   }, []);
   return (
     <>
-      <Hero />
+      <BlurFade delay={0.2}>
+        <Hero />
+      </BlurFade>
       {divider}
-      <About />
+      <BlurFade delay={0.2}>
+        <About />
+      </BlurFade>
       {divider}
-      <Projects />
+      <BlurFade delay={0.2}>
+        <Projects />
+      </BlurFade>
       {divider}
-      <Industries />
-      <SilverI7 />
+      <BlurFade delay={0.2}>
+        <Industries />
+      </BlurFade>
+      <BlurFade delay={0.2}>
+        <SilverI7 />
+      </BlurFade>
       {divider}
-      <Testimonials />
+      <BlurFade delay={0.2}>
+        <Testimonials />
+      </BlurFade>
       {divider}
-      <Contact />
+      <BlurFade delay={0.2}>
+        <Contact />
+      </BlurFade>
       <BackToTop />
     </>
   );

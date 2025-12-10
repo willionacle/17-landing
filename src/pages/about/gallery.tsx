@@ -30,7 +30,7 @@ export default function Gallery() {
 
   return (
     <div className="pt-18 lg:text-center">
-      <h1 className="font-[Playfair_Display] text-4xl text-center lg:text-6xl italic font-extrabold mb-3">
+      <h1 className="font-[Playfair_Display] text-4xl text-center lg:text-6xl italic font-extrabold mb-3 lg:mb-7">
         IntelliSeven in Action
       </h1>
 

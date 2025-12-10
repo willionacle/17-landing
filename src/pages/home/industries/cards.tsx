@@ -141,5 +141,5 @@ export default function Cards() {
       color: "text-blue-400",
     },
   ];
-  return <MarqueeCards items={imgs} speed={30} />;
+  return <MarqueeCards items={imgs} speed={5} />;
 }
