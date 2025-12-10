@@ -10,7 +10,7 @@ export default function Industries() {
         </h1>
         <span className="text-justify block w-full mb-4">
           We are committed to delivering tailored digital solutions across all
-          areas of business.
+          business operations.
         </span>
         <div className="w-full h-fit bg-linear-to-br from-red-500 via-red-950/20 to-red-500 rounded-lg p-0.5">
           <div className="bg-black rounded-lg p-3 overflow-hidden">

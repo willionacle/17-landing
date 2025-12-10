@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import {
   IconChevronRight,
   IconHeartHandshake,
-  IconUsers,
+  // IconUsers,
 } from "@tabler/icons-react";
 import NumberCard from "./number-card";
 import { useNavigate } from "react-router";
@@ -16,12 +16,12 @@ export default function RightSide() {
       total: 100,
       suffix: "+",
     },
-    {
-      icon: <IconUsers className="w-7 h-7" />,
-      title: "Customer Satisfaction",
-      total: 95,
-      suffix: "%",
-    },
+    // {
+    //   icon: <IconUsers className="w-7 h-7" />,
+    //   title: "Customer Satisfaction",
+    //   total: 95,
+    //   suffix: "%",
+    // },
   ];
 
   return (
@@ -42,20 +42,20 @@ export default function RightSide() {
         while ensuring exceptional customer service and support throughout the
         project lifestyle.
       </p>
+      <div className="flex flex-col lg:flex-row gap-5 my-12">
+        {numCards.map((item, idx) => (
+          <NumberCard {...item} key={idx} />
+        ))}
+      </div>
       <Button
         onClick={() => {
           window.scrollTo({ top: 0, behavior: "smooth" });
           navigate("/about");
         }}
-        className="border-l-0 border border-white/20 cursor-pointer mt-5 mb-10 rounded-sm bg-linear-to-r text-yellow-300 from-black to-neutral-500"
+        className="border-l-0 border border-white/20 cursor-pointer rounded-sm mt-4 bg-linear-to-r text-yellow-300 from-black to-neutral-500"
       >
         Explore more <IconChevronRight />
       </Button>
-      <div className="flex flex-col lg:flex-row gap-5 lg:mt-6">
-        {numCards.map((item, idx) => (
-          <NumberCard {...item} key={idx} />
-        ))}
-      </div>
     </div>
   );
 }

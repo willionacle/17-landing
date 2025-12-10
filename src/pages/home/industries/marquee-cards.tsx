@@ -121,7 +121,7 @@ export default function MarqueeCards({
               <div className="h-full w-full bg-linear-to-b from-black/0 to-black absolute left-0 bottom-0"></div>
             </CardContent>
             <CardFooter className="p-0 absolute bottom-4 left-4 flex flex-col items-start">
-              <h1 className={`font-bold leading-4 ${item.color}`}>
+              <h1 className={`font-bold leading-4 mb-3 ${item.color}`}>
                 {item.title}
               </h1>
               <p className="text-sm">{item.desc}</p>
