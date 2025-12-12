@@ -7,7 +7,7 @@ import {
   Card,
   CardContent,
   CardFooter,
-  CardHeader,
+  // CardHeader,
 } from "@/components/ui/card";
 import {
   Carousel,
@@ -16,7 +16,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Rating from "@/components/ui/rating";
+// import Rating from "@/components/ui/rating";
 
 export const items = [
   {
@@ -86,10 +86,10 @@ export default function Cards() {
           <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
             <div className="p-1">
               <Card className="w-full p-4 lg:p-10 gap-0 bg-linear-to-bl from-black to-black/60">
-                <CardHeader className="p-0">
+                {/* <CardHeader className="p-0">
                   <Rating value={5} editable={false} />
-                </CardHeader>
-                <CardContent className="p-0 pt-5 h-40 lg:h-60 flex items-start justify-start">
+                </CardHeader> */}
+                <CardContent className="p-0 pt-5 h-40 lg:h-48 flex items-start justify-start">
                   {item.comment}
                 </CardContent>
                 <CardFooter className="p-0 flex gap-4">

@@ -23,7 +23,7 @@ export default function Contact() {
           className="border mt-7 bg-linear-to-r text-white from-black/90 to-neutral-700 flex items-center gap-2"
         >
           <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=i7@intelliseven.com.ph."
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=sales@intelliseven.com.ph"
             target="_blank"
             rel="noopener noreferrer"
           >
