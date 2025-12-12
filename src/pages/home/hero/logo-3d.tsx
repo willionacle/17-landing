@@ -119,7 +119,7 @@ export default function Scene() {
     <Canvas
       shadows
       camera={{ position: [0, 0, 100], fov: 40 }}
-      className="-top-56 lg:-top-[30%] w-full h-dvh absolute!"
+      className="-top-64 lg:-top-[30%] w-full h-dvh absolute!"
     >
       <ambientLight intensity={0.3} />
       <directionalLight position={[10, 20, 20]} intensity={4} />
