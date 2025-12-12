@@ -1,6 +1,6 @@
-import Logo from "@/assets/logo2.png";
 import { Button } from "@/components/ui/button";
 import CarouselText from "./carousel-text";
+import Scene from "./logo-3d";
 
 export default function Hero() {
   return (
@@ -9,7 +9,8 @@ export default function Hero() {
       className="relative bg-[url('/img/herobg-mobile.png')] lg:bg-[url('/img/herobg.png')] lg:mt-[-50px] h-dvh lg:h-[calc(100dvh+200px)] flex items-center justify-center w-full bg-cover bg-bottom"
     >
       <div className="max-w-11/12 lg:max-w-8xl flex flex-col gap-5 items-center lg:justify-between text-center">
-        <img src={Logo} className="w-32 lg:w-56 lg:mb-8" />
+        {/* <img src={Logo} className="w-32 lg:w-56 lg:mb-8" /> */}
+        <Scene />
         <span className="lg:text-4xl italic">Empowering you with</span>
         <CarouselText />
         <div className="flex justify-center items-center w-full py-10 bg-[url('/bg-red-gradient.jpg')] bg-cover bg-center lg:mb-10">
