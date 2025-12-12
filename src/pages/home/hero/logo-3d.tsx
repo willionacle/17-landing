@@ -107,7 +107,7 @@ function Logo3D() {
   return (
     <group
       ref={ref}
-      scale={isMobile ? [0.03, -0.03, 0.03] : [0.05, -0.05, 0.05]}
+      scale={isMobile ? [0.03, -0.03, 0.03] : [0.04, -0.04, 0.04]}
     >
       {meshes}
     </group>
