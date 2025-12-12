@@ -29,7 +29,7 @@ export default function CarouselText() {
       <CarouselContent>
         {items.map((item, index) => (
           <CarouselItem key={index}>
-            <h1 className="text-inset-black text-yellow-300 mx-auto font-black italic w-fit text-3xl lg:text-8xl text-shadow-2xs">
+            <h1 className="text-inset-black text-yellow-300 mx-auto font-black italic w-fit text-3xl lg:text-8xl text-shadow-2xs pb-2">
               {item}
             </h1>
           </CarouselItem>

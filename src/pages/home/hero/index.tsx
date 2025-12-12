@@ -9,11 +9,10 @@ export default function Hero() {
       className="relative bg-[url('/img/herobg-mobile.png')] lg:bg-[url('/img/herobg.png')] lg:mt-[-50px] h-dvh lg:h-[calc(100dvh+200px)] flex items-center justify-center w-full bg-cover bg-bottom"
     >
       <div className="max-w-11/12 lg:max-w-8xl flex flex-col gap-5 items-center lg:justify-between text-center">
-        {/* <img src={Logo} className="w-32 lg:w-56 lg:mb-8" /> */}
         <Scene />
-        <span className="lg:text-4xl italic">Empowering you with</span>
+        <span className="lg:text-4xl italic mt-44">Empowering you with</span>
         <CarouselText />
-        <div className="flex justify-center items-center w-full py-10 bg-[url('/bg-red-gradient.jpg')] bg-cover bg-center lg:mb-10">
+        <div className="flex justify-center items-center w-full pb-14 pt-8 bg-[url('/bg-red-gradient.jpg')] bg-cover bg-center">
           <Button
             className="
           bg-neutral-800
@@ -32,7 +31,12 @@ export default function Hero() {
             <span className="font-bold text-red-500 italic">Business</span>
           </Button>
         </div>
-        <span className="text-xs lg:text-lg mt-20 lg:mt-0">
+        <span
+          className="text-xs lg:text-lg block relative z-10"
+          style={{
+            textShadow: "0 2px 8px #000",
+          }}
+        >
           For inquiries, contact us at{" "}
           <a
             href="tel:+639173092317"
@@ -44,12 +48,12 @@ export default function Hero() {
           </a>{" "}
           or email us at{" "}
           <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=i7@intelliseven.com.ph."
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=sales@intelliseven.com.ph"
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary hover:underline"
           >
-            i7@intelliseven.com.ph
+            sales@intelliseven.com.ph
           </a>
           .
         </span>
