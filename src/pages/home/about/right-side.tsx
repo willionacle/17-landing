@@ -52,7 +52,7 @@ export default function RightSide() {
           window.scrollTo({ top: 0, behavior: "smooth" });
           navigate("/about");
         }}
-        className="border-l-0 border border-white/20 cursor-pointer rounded-sm mt-4 bg-linear-to-r text-yellow-300 from-black to-neutral-500"
+        className="border-l-0 border border-zinc-800 cursor-pointer rounded-sm mt-4 bg-linear-to-r text-yellow-300 from-black to-neutral-500"
       >
         Explore more <IconChevronRight />
       </Button>

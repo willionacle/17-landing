@@ -9,12 +9,15 @@ import Contact from "./contact";
 import BackToTop from "@/components/back-to-top";
 import { useEffect } from "react";
 import BlurFade from "@/components/blur-fade";
+import { useLocation } from "react-router";
 
 export const divider = (
   <Separator className="max-w-11/12 mx-auto lg:max-w-8xl" />
 );
 
 export default function Home() {
+  const location = useLocation();
+
   useEffect(() => {
     const hash = window.location.hash;
     if (hash) {
@@ -25,7 +28,8 @@ export default function Home() {
         }, 50);
       }
     }
-  }, []);
+  }, [location]);
+
   return (
     <>
       <BlurFade delay={0.2}>

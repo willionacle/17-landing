@@ -31,7 +31,9 @@ export default function Header() {
       <div className="max-w-11/12 lg:max-w-8xl mx-auto flex items-center justify-between">
         <img
           src={Logo}
-          onClick={() => navigate("/")}
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" }), navigate("/");
+          }}
           className="w-40 lg:w-56 cursor-pointer"
         />
         <MobileMenu items={menuItems} />

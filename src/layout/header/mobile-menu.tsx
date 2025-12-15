@@ -10,17 +10,10 @@ export default function MobileMenu({ items }: { items: MenuItemsProps[] }) {
   const navigate = useNavigate();
 
   const handleClick = (href: string) => {
-    setOpen(false);
-
-    const [path, hash] = href.split("#");
-    navigate(path || "/");
-
-    if (hash) {
-      setTimeout(() => {
-        const el = document.getElementById(hash);
-        if (el) el.scrollIntoView({ behavior: "smooth" });
-      }, 50);
-    }
+    navigate(href);
+    setTimeout(() => {
+      setOpen(false);
+    }, 500);
   };
 
   return (

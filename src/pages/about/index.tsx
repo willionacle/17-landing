@@ -5,8 +5,13 @@ import Pillars from "./pillars";
 import Bottom from "./bottom";
 import Gallery from "./gallery";
 import BlurFade from "@/components/blur-fade";
+import { useEffect } from "react";
 
 export default function About() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <section className="py-18 lg:pt-44">
       <div className="max-w-11/12 lg:max-w-8xl gap-5 mx-auto">

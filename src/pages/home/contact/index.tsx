@@ -20,7 +20,7 @@ export default function Contact() {
 
         <Button
           asChild
-          className="border mt-7 bg-linear-to-r text-white from-black/90 to-neutral-700 flex items-center gap-2"
+          className="border border-zinc-800 mt-7 bg-linear-to-r text-white from-black/90 to-neutral-700 flex items-center gap-2"
         >
           <a
             href="https://mail.google.com/mail/?view=cm&fs=1&to=sales@intelliseven.com.ph"

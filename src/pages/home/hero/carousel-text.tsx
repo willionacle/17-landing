@@ -7,29 +7,35 @@ import {
 } from "@/components/ui/carousel";
 
 export default function CarouselText() {
-  const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+  const autoplay = React.useMemo(
+    () => Autoplay({ delay: 2000, stopOnInteraction: false }),
+    []
   );
 
   const items = [
-    "Better Technology ",
+    "Better Technology",
     "Custom Software",
     "Scalable Systems",
     "Modern Solutions",
     "Digital Power",
   ];
 
+  // const isDesktop =
+  //   typeof window !== "undefined" &&
+  //   window.matchMedia("(hover: hover)").matches;
+
   return (
     <Carousel
-      plugins={[plugin.current]}
+      opts={{ loop: true }}
+      plugins={[autoplay]}
       className="w-fit max-w-xs lg:max-w-full"
-      onMouseEnter={plugin.current.stop}
-      onMouseLeave={plugin.current.reset}
+      // onMouseEnter={isDesktop ? autoplay.stop : undefined}
+      // onMouseLeave={isDesktop ? autoplay.reset : undefined}
     >
       <CarouselContent>
         {items.map((item, index) => (
           <CarouselItem key={index}>
-            <h1 className="text-inset-black text-yellow-300 mx-auto font-black italic w-fit text-3xl lg:text-8xl text-shadow-2xs pb-2">
+            <h1 className="text-inset-black text-yellow-300 mx-auto font-black italic w-fit text-3xl lg:text-8xl pb-2">
               {item}
             </h1>
           </CarouselItem>

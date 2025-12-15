@@ -11,15 +11,7 @@ export default function DesktopNav({ items }: { items: MenuItemsProps[] }) {
   const navigate = useNavigate();
 
   const handleClick = (href: string) => {
-    const [path, hash] = href.split("#");
-    navigate(path || "/");
-
-    if (hash) {
-      setTimeout(() => {
-        const el = document.getElementById(hash);
-        if (el) el.scrollIntoView({ behavior: "smooth" });
-      }, 50);
-    }
+    navigate(href);
   };
 
   return (
