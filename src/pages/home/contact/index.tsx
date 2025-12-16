@@ -1,10 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { IconMail } from "@tabler/icons-react";
 
+import ContactBg from "@/assets/img/contactbg.png";
+
 export default function Contact() {
   return (
     <section id="contact" className="w-full py-18 text-center">
-      <div className="border rounded-2xl py-12 lg:py-60 px-6 bg-[url('/img/contactbg.png')] bg-cover bg-center max-w-11/12 lg:max-w-8xl mx-auto flex flex-col lg:gap-5 justify-center items-center">
+      <div
+        className="border rounded-2xl py-12 lg:py-60 px-6 bg-cover bg-center max-w-11/12 lg:max-w-8xl mx-auto flex flex-col lg:gap-5 justify-center items-center"
+        style={{ backgroundImage: `url(${ContactBg})` }}
+      >
         <div className="border rounded-full text-yellow-300 py-2 px-5">
           Innovate with IntelliSeven
         </div>

@@ -1,5 +1,9 @@
 import Title from "./title";
 
+import Pillar1 from "@/assets/img/about/pillar1.png";
+import Pillar2 from "@/assets/img/about/pillar2.png";
+import Pillar3 from "@/assets/img/about/pillar3.png";
+
 export default function Pillars() {
   const boxStyle =
     "bg-linear-to-tr from-white/10 to-black border border-white/45 rounded-xl flex items-center justify-center p-6";
@@ -7,10 +11,12 @@ export default function Pillars() {
   return (
     <div className="py-18">
       <Title title="Pillars of IntelliSeven Inc." />
-      <p className="text-center">
+
+      <p className="text-center max-w-3xl mx-auto">
         Streamlining work processes with our technology. Accelerating business
         success with next-gen IT.
       </p>
+
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-7xl mt-18 mx-auto">
         {/* 1 */}
         <div className={boxStyle}>
@@ -22,20 +28,22 @@ export default function Pillars() {
         </div>
 
         {/* 2 (Large wide image) */}
-        <div className="col-span-1 md:col-span-2 md:row-span-1 rounded-xl overflow-hidden">
+        <div className="col-span-1 md:col-span-2 rounded-xl overflow-hidden">
           <img
-            src="/img/about/pillar1.png"
-            className="w-full object-cover"
-            alt=""
+            src={Pillar1}
+            alt="Empower businesses with smart tech"
+            className="w-full h-full object-cover"
+            loading="lazy"
           />
         </div>
 
-        {/* 3 */}
+        {/* 3 (Tall image) */}
         <div className="rounded-xl row-span-2 overflow-hidden">
           <img
-            src="/img/about/pillar3.png"
+            src={Pillar3}
+            alt="Champion digital change"
             className="w-full h-full object-cover"
-            alt=""
+            loading="lazy"
           />
         </div>
 
@@ -51,9 +59,10 @@ export default function Pillars() {
         {/* 5 */}
         <div className="rounded-xl overflow-hidden">
           <img
-            src="/img/about/pillar2.png"
+            src={Pillar2}
+            alt="Optimize workflow operations"
             className="w-full h-full object-cover"
-            alt=""
+            loading="lazy"
           />
         </div>
 

@@ -1,3 +1,4 @@
+import I7 from "@/assets/img/i7.png";
 export default function SilverI7() {
   return (
     //   <h1
@@ -13,7 +14,7 @@ export default function SilverI7() {
     //   </h1>
     <div className="w-full mb-10">
       <div className="max-w-11/12 lg:max-w-8xl mx-auto">
-        <img src="/img/i7.png" />
+        <img src={I7} />
       </div>
     </div>
   );

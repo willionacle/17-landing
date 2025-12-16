@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import CarouselText from "./carousel-text";
 import Scene from "./logo-3d";
+import Scroll from "@/assets/img/scroll.gif";
 
 export default function Hero() {
   return (
@@ -59,7 +60,7 @@ export default function Hero() {
         </span>
       </div>
       <a href="#about" className="absolute bottom-[70px]">
-        <img src="/img/scroll.gif" className="w-12 animate animate-pulse" />
+        <img src={Scroll} className="w-12 animate animate-pulse" />
       </a>
     </section>
   );

@@ -7,6 +7,9 @@ import {
 } from "@/components/ui/card";
 import Title from "./title";
 import clsx from "clsx";
+import Service1 from "@/assets/img/about/service1.png";
+import Service2 from "@/assets/img/about/service2.png";
+import Service3 from "@/assets/img/about/service3.png";
 
 export default function Bottom() {
   const services = [
@@ -14,19 +17,19 @@ export default function Bottom() {
       title: "Joint Creation",
       description:
         "Our team prioritizes client input in the development of our software solutions, allowing us to tailor services to meet client needs and desired outcomes.",
-      image: "/img/about/service1.png",
+      image: Service1,
     },
     {
       title: "Custom Development",
       description:
         "All software products are developed in-house by our skilled and reliable engineering team, which ensures the precision of our services.",
-      image: "/img/about/service2.png",
+      image: Service2,
     },
     {
       title: "Innovative Solutions",
       description:
         "Our software developers are committed to delivering top-notch service by integrating up-to-date technology solutions into every product.",
-      image: "/img/about/service3.png",
+      image: Service3,
     },
   ];
 

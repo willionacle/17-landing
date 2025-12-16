@@ -3,12 +3,7 @@
 import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
 
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  // CardHeader,
-} from "@/components/ui/card";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -17,7 +12,13 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import type { CarouselApi } from "@/components/ui/carousel";
-// import Rating from "@/components/ui/rating";
+
+import Client1 from "@/assets/img/testimonials/client1.png";
+import Client2 from "@/assets/img/testimonials/client2.png";
+import Client3 from "@/assets/img/testimonials/client3.png";
+import Client4 from "@/assets/img/testimonials/client4.png";
+import Client5 from "@/assets/img/testimonials/client5.png";
+import Client6 from "@/assets/img/testimonials/client6.png";
 
 export const items = [
   {
@@ -26,7 +27,7 @@ export const items = [
       "IntelliSeven delivered beyond what we initially envisioned. Their speed, efficiency, and deep technical understanding helped us launch earlier than scheduled without sacrificing quality.",
     name: "Mr. Chen Xiaolan",
     position: "CEO, ZKTeco",
-    avatar: "/img/testimonials/client1.png",
+    avatar: Client1,
   },
   {
     rating: 5,
@@ -34,7 +35,7 @@ export const items = [
       "Their attention to detail is unmatched. IntelliSeven doesn't just build software — they understand the business behind it and provide solutions that make real impact.",
     name: "Ms. Sarah Lim",
     position: "Product Manager, NexaTech",
-    avatar: "/img/testimonials/client2.png",
+    avatar: Client2,
   },
   {
     rating: 5,
@@ -42,7 +43,7 @@ export const items = [
       "Consistent communication, transparency, and strong industry discipline. IntelliSeven is the kind of development partner every company wishes they had.",
     name: "Mr. Hiroshi Sato",
     position: "CTO, Mirai Systems Japan",
-    avatar: "/img/testimonials/client3.png",
+    avatar: Client3,
   },
   {
     rating: 5,
@@ -50,7 +51,7 @@ export const items = [
       "We had complex requirements and a very tight deadline — yet IntelliSeven completed everything flawlessly. They treat our success as their own.",
     name: "Ms. Aira Manalili",
     position: "COO, Central Digital Labs",
-    avatar: "/img/testimonials/client4.png",
+    avatar: Client4,
   },
   {
     rating: 5,
@@ -58,7 +59,7 @@ export const items = [
       "The IntelliSeven team is extremely reliable. What impressed us most was their ability to take feedback quickly and iterate without hesitation.",
     name: "Mr. Park Joon-Se",
     position: "Director of Engineering, HanTech Korea",
-    avatar: "/img/testimonials/client5.png",
+    avatar: Client5,
   },
   {
     rating: 5,
@@ -66,7 +67,7 @@ export const items = [
       "They don't just write code—they solve problems. IntelliSeven helped reshape our customer experience and boosted our digital adoption rate dramatically.",
     name: "Mrs. Angela Monteverde",
     position: "Head of Digital Strategy, PrimeOne Holdings",
-    avatar: "/img/testimonials/client6.png",
+    avatar: Client6,
   },
 ];
 
@@ -107,7 +108,12 @@ export default function Cards() {
                   {item.comment}
                 </CardContent>
                 <CardFooter className="p-0 flex gap-4">
-                  <img src={item.avatar} className="w-10 rounded-full" />
+                  <img
+                    src={item.avatar}
+                    alt={item.name}
+                    className="w-10 rounded-full"
+                    loading="lazy"
+                  />
                   <div>
                     <p>{item.name}</p>
                     <p className="text-white/35">{item.position}</p>
@@ -119,7 +125,6 @@ export default function Cards() {
         ))}
       </CarouselContent>
 
-      {/* Indicators */}
       <div className="mt-6 flex justify-center gap-2">
         {Array.from({ length: count }).map((_, index) => (
           <button
