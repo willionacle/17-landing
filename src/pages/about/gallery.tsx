@@ -136,8 +136,8 @@ export default function Gallery() {
           })}
         </CarouselContent>
 
-        <CarouselPrevious className="-left-2 cursor-pointer text-black bg-white! md:left-56" />
-        <CarouselNext className="-right-2 cursor-pointer text-black bg-white! md:right-56" />
+        <CarouselPrevious className="-left-2 cursor-pointer text-black bg-white! hover:text-black md:left-56" />
+        <CarouselNext className="-right-2 cursor-pointer text-black bg-white! hover:text-black md:right-56" />
       </Carousel>
     </div>
   );
