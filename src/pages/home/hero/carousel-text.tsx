@@ -1,46 +1,47 @@
 import * as React from "react";
-import Autoplay from "embla-carousel-autoplay";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel";
+
+const items = [
+  "Better Technology",
+  "Custom Software",
+  "Scalable Systems",
+  "Modern Solutions",
+  "Digital Power",
+];
 
 export default function CarouselText() {
-  const autoplay = React.useMemo(
-    () => Autoplay({ delay: 2000, stopOnInteraction: false }),
-    []
-  );
+  const [index, setIndex] = React.useState(0);
+  const [visible, setVisible] = React.useState(true);
 
-  const items = [
-    "Better Technology",
-    "Custom Software",
-    "Scalable Systems",
-    "Modern Solutions",
-    "Digital Power",
-  ];
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setVisible(false);
 
-  // const isDesktop =
-  //   typeof window !== "undefined" &&
-  //   window.matchMedia("(hover: hover)").matches;
+      setTimeout(() => {
+        setIndex((prev) => (prev + 1) % items.length);
+        setVisible(true);
+      }, 400);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <Carousel
-      opts={{ loop: true }}
-      plugins={[autoplay]}
-      className="w-fit max-w-xs lg:max-w-full"
-      // onMouseEnter={isDesktop ? autoplay.stop : undefined}
-      // onMouseLeave={isDesktop ? autoplay.reset : undefined}
-    >
-      <CarouselContent>
-        {items.map((item, index) => (
-          <CarouselItem key={index}>
-            <h1 className="text-inset-black text-yellow-300 mx-auto font-black italic w-fit text-3xl lg:text-8xl pb-2">
-              {item}
-            </h1>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-    </Carousel>
+    <div className="h-16 lg:h-36 flex items-center justify-center">
+      <h1
+        className={`
+          text-inset-black
+          text-yellow-300
+          font-black
+          italic
+          text-3xl
+          lg:text-8xl
+          transition-opacity
+          duration-400
+          ${visible ? "opacity-100" : "opacity-0"}
+        `}
+      >
+        {items[index]}
+      </h1>
+    </div>
   );
 }

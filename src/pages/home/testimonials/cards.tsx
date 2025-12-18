@@ -73,7 +73,7 @@ export const items = [
 
 export default function Cards() {
   const autoplay = React.useMemo(
-    () => Autoplay({ delay: 2000, stopOnInteraction: false }),
+    () => Autoplay({ delay: 10000, stopOnInteraction: false }),
     []
   );
 

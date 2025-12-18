@@ -19,24 +19,6 @@ import Gallery6 from "@/assets/img/gallery/6.jpg";
 import Gallery7 from "@/assets/img/gallery/7.jpg";
 import Gallery8 from "@/assets/img/gallery/8.jpg";
 import Gallery9 from "@/assets/img/gallery/9.jpg";
-import Gallery10 from "@/assets/img/gallery/10.jpg";
-import Gallery11 from "@/assets/img/gallery/11.jpg";
-import Gallery12 from "@/assets/img/gallery/12.jpg";
-import Gallery13 from "@/assets/img/gallery/13.jpg";
-import Gallery14 from "@/assets/img/gallery/14.jpg";
-import Gallery15 from "@/assets/img/gallery/15.jpg";
-import Gallery16 from "@/assets/img/gallery/16.jpg";
-import Gallery17 from "@/assets/img/gallery/17.jpg";
-import Gallery18 from "@/assets/img/gallery/18.jpg";
-import Gallery19 from "@/assets/img/gallery/19.jpg";
-import Gallery20 from "@/assets/img/gallery/20.jpg";
-import Gallery21 from "@/assets/img/gallery/21.jpg";
-import Gallery22 from "@/assets/img/gallery/22.jpg";
-import Gallery23 from "@/assets/img/gallery/23.jpg";
-import Gallery24 from "@/assets/img/gallery/24.jpg";
-import Gallery25 from "@/assets/img/gallery/25.jpg";
-import Gallery26 from "@/assets/img/gallery/26.jpg";
-import Gallery27 from "@/assets/img/gallery/27.jpg";
 
 const galleryImages = [
   Gallery1,
@@ -48,24 +30,6 @@ const galleryImages = [
   Gallery7,
   Gallery8,
   Gallery9,
-  Gallery10,
-  Gallery11,
-  Gallery12,
-  Gallery13,
-  Gallery14,
-  Gallery15,
-  Gallery16,
-  Gallery17,
-  Gallery18,
-  Gallery19,
-  Gallery20,
-  Gallery21,
-  Gallery22,
-  Gallery23,
-  Gallery24,
-  Gallery25,
-  Gallery26,
-  Gallery27,
 ];
 
 export default function Gallery() {
@@ -78,7 +42,7 @@ export default function Gallery() {
 
   const onSelect = useCallback(() => {
     if (!api) return;
-    setActiveIndex(api.selectedScrollSnap() + 1);
+    setActiveIndex(api.selectedScrollSnap());
   }, [api]);
 
   useEffect(() => {
@@ -90,7 +54,8 @@ export default function Gallery() {
   return (
     <div className="pt-18 lg:text-center">
       <h1 className="font-[Playfair_Display] text-4xl text-center lg:text-6xl italic font-extrabold mb-3 lg:mb-7">
-        IntelliSeven in Action
+        <span className="text-yellow-300">Intelli</span>
+        <span className="text-red-500">Seven</span> in Action
       </h1>
 
       <p className="text-justify mb-18 lg:text-center lg:max-w-6/12 lg:mx-auto">
@@ -103,6 +68,9 @@ export default function Gallery() {
         className="w-full max-w-sm md:max-w-full relative mx-auto"
         setApi={setApi}
         plugins={[autoplayRef.current]}
+        opts={{
+          loop: true,
+        }}
         onMouseEnter={autoplayRef.current.stop}
         onMouseLeave={autoplayRef.current.reset}
       >
