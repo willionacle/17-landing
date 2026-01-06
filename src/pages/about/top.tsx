@@ -1,5 +1,6 @@
 import AboutIcon from "@/assets/img/about/abouticon.png";
-import AboutAsset from "@/assets/img/about/aboutasset1.png";
+// import AboutAsset from "@/assets/img/about/aboutasset1.png";
+import Scene from "./logo-3d";
 
 export default function Top() {
   return (
@@ -37,13 +38,14 @@ export default function Top() {
         </p>
       </div>
 
-      <div className="flex justify-center lg:justify-end">
-        <img
+      <div className="flex justify-center lg:justify-end lg:w-1/2">
+        {/* <img
           src={AboutAsset}
           alt="IntelliSeven office and team"
           className="max-w-full h-auto rounded-xl"
           loading="lazy"
-        />
+        /> */}
+        <Scene />
       </div>
     </div>
   );

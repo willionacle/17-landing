@@ -14,8 +14,8 @@ import Gallery1 from "@/assets/img/gallery/1.jpg";
 import Gallery2 from "@/assets/img/gallery/2.jpg";
 import Gallery3 from "@/assets/img/gallery/3.jpg";
 import Gallery4 from "@/assets/img/gallery/4.jpg";
-import Gallery5 from "@/assets/img/gallery/5.jpg";
-import Gallery6 from "@/assets/img/gallery/6.jpg";
+// import Gallery5 from "@/assets/img/gallery/5.jpg";
+// import Gallery6 from "@/assets/img/gallery/6.jpg";
 import Gallery7 from "@/assets/img/gallery/7.jpg";
 import Gallery8 from "@/assets/img/gallery/8.jpg";
 import Gallery9 from "@/assets/img/gallery/9.jpg";
@@ -25,8 +25,8 @@ const galleryImages = [
   Gallery2,
   Gallery3,
   Gallery4,
-  Gallery5,
-  Gallery6,
+  // Gallery5,
+  // Gallery6,
   Gallery7,
   Gallery8,
   Gallery9,

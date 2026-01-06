@@ -66,7 +66,7 @@ export default function Cards() {
             <img
               src={item.img}
               alt={item.title}
-              className="bg-top object-cover w-full h-[200px] lg:h-[400px] grayscale group-hover:grayscale-0 transition-all duration-600 scale-100 group-hover:scale-125"
+              className="bg-top object-cover w-full h-[200px] lg:h-[400px] lg:grayscale group-hover:grayscale-0 transition-all duration-600 scale-100 group-hover:scale-125"
               loading="lazy"
             />
           </CardContent>

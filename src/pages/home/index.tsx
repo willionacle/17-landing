@@ -4,7 +4,7 @@ import Hero from "./hero";
 import Projects from "./projects";
 import Industries from "./industries";
 import SilverI7 from "@/components/silver-i7";
-import Testimonials from "./testimonials";
+// import Testimonials from "./testimonials";
 import Contact from "./contact";
 import BackToTop from "@/components/back-to-top";
 import { useEffect } from "react";
@@ -51,9 +51,9 @@ export default function Home() {
         <SilverI7 />
       </BlurFade>
       {divider}
-      <BlurFade delay={0.2}>
+      {/* <BlurFade delay={0.2}>
         <Testimonials />
-      </BlurFade>
+      </BlurFade> */}
       {divider}
       <BlurFade delay={0.2}>
         <Contact />

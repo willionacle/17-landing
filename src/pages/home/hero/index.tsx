@@ -49,12 +49,12 @@ export default function Hero() {
           </a>{" "}
           or email us at{" "}
           <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=i7@intelliseven.com.ph"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=sales@intelliseven.com.ph"
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary hover:underline"
           >
-            i7@intelliseven.com.ph
+            sales@intelliseven.com.ph
           </a>
           .
         </span>
