@@ -5,6 +5,9 @@ import LawSys from "@/assets/img/projects/lawsys.png";
 import ITimeHR from "@/assets/img/projects/itimehr.png";
 import Dates from "@/assets/img/projects/dates.png";
 import DocumentMaker from "@/assets/img/projects/documentmaker.png";
+import ConsolSys from "@/assets/img/projects/consolsys.png";
+import Pos from "@/assets/img/projects/pos.png";
+import Electsys from "@/assets/img/projects/electsys.png";
 
 export default function Cards() {
   const items = [
@@ -23,12 +26,27 @@ export default function Cards() {
       title: "E-Commerce",
       img: Dates,
       desc: "Depending on a client’s vision, we develop fully integrated e-commerce systems that can optimize product management, from taking orders in real-time to securing online payments.",
-      link: "https://www.datesfruitph.com/",
+      // link: "https://www.datesfruitph.com/",
     },
     {
       title: "Legal Document Maker",
       img: DocumentMaker,
       desc: "A web-based platform that produces personalized legal forms, professional contracts and agreements tailored to your business needs. It offers faster input by turning paperworks into ready-to-use documents.",
+    },
+    {
+      title: "ConsolSys",
+      img: ConsolSys,
+      desc: "ConsolSys is a systematic queuing system designed for business operations that involve simultaneous customer engagement.",
+    },
+    {
+      title: "Point of Sale",
+      img: Pos,
+      desc: "We develop POS systems that aid business owners in handling transactions, sales, and customer information real-time, enabling efficient and smoother store management.",
+    },
+    {
+      title: "ElecSys",
+      img: Electsys,
+      desc: "A software system that helps leaders track their community regarding projects, activities, population, and others. ",
     },
   ];
 
@@ -48,7 +66,7 @@ export default function Cards() {
             <img
               src={item.img}
               alt={item.title}
-              className="bg-top bg-cover w-full h-[200px] lg:h-[400px] grayscale group-hover:grayscale-0 transition-all duration-600 scale-100 group-hover:scale-125"
+              className="bg-top object-cover w-full h-[200px] lg:h-[400px] grayscale group-hover:grayscale-0 transition-all duration-600 scale-100 group-hover:scale-125"
               loading="lazy"
             />
           </CardContent>
