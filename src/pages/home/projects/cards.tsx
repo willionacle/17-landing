@@ -21,6 +21,7 @@ export default function Cards() {
       title: "iTimeHR",
       img: ITimeHR,
       desc: "The iTimeHR is a comprehensive HRIS software designed to help companies streamline effective employee management through real-time attendance monitoring, payroll processing, and organized scheduling.",
+      link: "https://itimehr.intelliseven.com.ph/",
     },
     {
       title: "E-Commerce",
