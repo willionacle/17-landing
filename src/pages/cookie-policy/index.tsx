@@ -15,7 +15,6 @@ export default function CookiePolicy() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
-
   return (
     <section className="bg-black py-18 scroll-pt-7 min-h-screen">
       <div className="max-w-11/12 lg:max-w-8xl gap-5 mx-auto">
